@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Services</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fb;
+            color: #1f2937;
+        }
+
+        header {
+            background: #047857;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .badge {
+            background: white;
+            color: #047857;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .hero {
+            padding: 60px 8%;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: #64748b;
+            font-size: 18px;
+            max-width: 650px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 0 8% 60px;
+        }
+
+        .card {
+            background: white;
+            padding: 28px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #047857;
+        }
+
+        .card p {
+            color: #64748b;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #047857;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">SecureLife</div>
+    <div class="badge">Insurance Services</div>
+</header>
+
+<section class="hero">
+    <h1>Insurance Services</h1>
+
+    <p>
+        A simple insurance service interface demonstrating
+        containerized deployment through Docker, Jenkins CI/CD,
+        and Docker Swarm.
+    </p>
+</section>
+
+<section class="cards">
+
+    <div class="card">
+        <h3>Health Insurance</h3>
+        <p>Explore health coverage and policy information.</p>
+    </div>
+
+    <div class="card">
+        <h3>Life Insurance</h3>
+        <p>Manage life insurance policy information.</p>
+    </div>
+
+    <div class="card">
+        <h3>Vehicle Insurance</h3>
+        <p>Access vehicle insurance and policy details.</p>
+    </div>
+
+    <div class="card">
+        <h3>Policy Support</h3>
+        <p>View policy information and support services.</p>
+    </div>
+
+</section>
+
+<footer>
+    CI/CD with Jenkins • Docker • Docker Swarm
+</footer>
+
+</body>
+</html>

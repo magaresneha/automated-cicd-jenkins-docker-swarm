@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Banking</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fb;
+            color: #1f2937;
+        }
+
+        header {
+            background: #4f46e5;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .badge {
+            background: #ffffff;
+            color: #4f46e5;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .hero {
+            padding: 60px 8%;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: #64748b;
+            font-size: 18px;
+            max-width: 650px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 0 8% 60px;
+        }
+
+        .card {
+            background: white;
+            padding: 28px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #4f46e5;
+        }
+
+        .card p {
+            color: #64748b;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #4f46e5;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">SmartBank</div>
+    <div class="badge">Mobile Banking</div>
+</header>
+
+<section class="hero">
+    <h1>Mobile Banking</h1>
+
+    <p>
+        A responsive mobile banking interface demonstrating
+        containerized application deployment using Docker,
+        Jenkins CI/CD, and Docker Swarm.
+    </p>
+</section>
+
+<section class="cards">
+
+    <div class="card">
+        <h3>Quick Balance</h3>
+        <p>Check your account balance quickly and securely.</p>
+    </div>
+
+    <div class="card">
+        <h3>Payments</h3>
+        <p>Make digital payments and manage transactions.</p>
+    </div>
+
+    <div class="card">
+        <h3>Mobile Transfer</h3>
+        <p>Transfer funds conveniently from your mobile device.</p>
+    </div>
+
+    <div class="card">
+        <h3>Secure Access</h3>
+        <p>Access banking services through a secure interface.</p>
+    </div>
+
+</section>
+
+<footer>
+    CI/CD with Jenkins • Docker • Docker Swarm
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+version: "3.8"
+
+services:
+
+  internet-banking:
+    image: snehamagare/internet-banking:v1
+    ports:
+      - "81:80"
+    deploy:
+      replicas: 3
+      restart_policy:
+        condition: on-failure
+
+  mobile-banking:
+    image: snehamagare/mobile-banking:v1
+    ports:
+      - "82:80"
+    deploy:
+      replicas: 3
+      restart_policy:
+        condition: on-failure
+
+  insurance:
+    image: snehamagare/insurance:v1
+    ports:
+      - "83:80"
+    deploy:
+      replicas: 3
+      restart_policy:
+        condition: on-failure
+
+  loan:
+    image: snehamagare/loan:v1
+    ports:
+      - "84:80"
+    deploy:
+      replicas: 3
+      restart_policy:
+        condition: on-failure
